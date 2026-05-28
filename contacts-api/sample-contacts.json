@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "James",
+    "lastName": "maina",
+    "email": "james.maina@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "1990-05-15"
+  },
+  {
+    "firstName": "Peter",
+    "lastName": "Johnson",
+    "email": "peter.johnson@yahoo.com",
+    "favoriteColor": "Green",
+    "birthday": "1988-11-22"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "njoroge",
+    "email": "michael.njoroge@knh.com",
+    "favoriteColor": "Red",
+    "birthday": "1992-03-30"
+  }
+]
