@@ -1,0 +1,5 @@
+### Get all professional data
+GET http://localhost:8080/professional
+
+### Health check
+GET http://localhost:8080/health
