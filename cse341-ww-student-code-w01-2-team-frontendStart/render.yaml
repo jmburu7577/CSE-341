@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: contacts-api
+    env: node
+    branch: main
+    root: backend
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+      - key: MONGODB_DBNAME
+      - key: MONGODB_COLLECTION
