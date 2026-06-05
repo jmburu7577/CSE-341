@@ -1,0 +1,7 @@
+@host=http://localhost:3000
+
+### GET all contacts
+GET {{host}}/
+
+### GET single contact (replace {id} with a real contact ID)
+GET {{host}}/{id}
