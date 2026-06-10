@@ -7,11 +7,11 @@
     },
     "servers": [
         {
-            "url": "https://RENDER_YOUR_DOMAIN_HERE",
+            "url": "https://cse-341-gevh.onrender.com",
             "description": "Render server"
         },
         {
-            "url": "http://localhost:3000",
+            "url": "http://localhost:3001",
             "description": "Local server"
         }
     ],
