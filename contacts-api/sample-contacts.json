@@ -19,5 +19,19 @@
     "email": "michael.njoroge@knh.com",
     "favoriteColor": "Red",
     "birthday": "1992-03-30"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Williams",
+    "email": "sarah.williams@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "1995-07-12"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Kim",
+    "email": "david.kim@outlook.com",
+    "favoriteColor": "Orange",
+    "birthday": "1993-02-28"
   }
 ]
