@@ -2,20 +2,20 @@ const http = require('http');
 
 function testGetAll() {
   return new Promise((resolve, reject) => {
-    http.get('http://localhost:3000/', (res) => {
+    http.get('http://localhost:3001/contacts', (res) => {
       let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(JSON.parse(data)));
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => { resolve(JSON.parse(data)); });
     }).on('error', reject);
   });
 }
 
 function testGetSingle(contactId) {
   return new Promise((resolve, reject) => {
-    http.get(`http://localhost:3000/${contactId}`, (res) => {
+    http.get(`http://localhost:3001/contacts/${contactId}`, (res) => {
       let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(JSON.parse(data)));
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => { resolve(JSON.parse(data)); });
     }).on('error', reject);
   });
 }
@@ -30,7 +30,7 @@ async function runTests() {
       console.log('✅ Test 2 - Single contact:', singleContact);
     }
   } catch (err) {
-    console.log('❌ Error testing API:', err.message);
+    console.log('❌ Error testing API:', err);
   }
 }
 

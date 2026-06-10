@@ -1,7 +1,32 @@
-@host=http://localhost:3000
+@host=http://localhost:3001
 
 ### GET all contacts
-GET {{host}}/
+GET {{host}}/contacts
 
 ### GET single contact (replace {id} with a real contact ID)
-GET {{host}}/{id}
+GET {{host}}/contacts/{{contactId}}
+
+### POST create contact (all fields required)
+POST {{host}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Frank",
+  "lastName": "Miller",
+  "email": "frank.miller@example.com",
+  "favoriteColor": "teal",
+  "birthday": "1991-03-11"
+}
+
+### PUT update contact
+PUT {{host}}/contacts/{{contactId}}
+Content-Type: application/json
+
+{
+  "favoriteColor": "magenta",
+  "birthday": "1991-04-12"
+}
+
+### DELETE contact
+DELETE {{host}}/contacts/{{contactId}}
+
